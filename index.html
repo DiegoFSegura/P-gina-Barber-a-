@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbudos Alfa</title>
+    <script src="jquery/jquery-3.1.0.min.js"></script>
+    <script src="jquery/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="shortcut icon" href="img/logo2.png">
+</head>
+<body>
+    <header class="full-width NavBarP">
+		<div class="full-width NavBarP-Logo"><img src="img/logo.png" alt=""></div>
+		<nav class="full-width NavBarP-Nav">
+			<ul class="full-width list-unstyled">
+				<li><a href="#!">Inicio</a></li>
+				<li><a href="#!">Barberos</a></li>
+				<li><a href="#!">Galeria</a></li>
+				<li><a href="#nosotros">Sobre Nosotros</a></li>
+				<li>
+	
+				</li>
+			</ul>
+		</nav>
+		<i class="fa fa-bars visible-xs btn-menuMobile ShowMenuMobile" aria-hidden="true"></i>
+	</header>
+
+	<section class="banner">
+		<div class="banner-content">
+			<h1>Encuantra tu Estilo Alfa</h1>
+			<a href="#">Conocenos</a>	
+		</div>
+	</section>
+    <section class="nosotros" id="#nosotros">
+            <h2>Bienvenido a!</h2>
+            <h1>BARBUDOS ALFA</h1>
+            <p>Nuestra barbería no es solo un lugar para obtener un corte de pelo; es un 
+				refugio para aquellos que buscan una experiencia completa de cuidado personal.
+				 Ven y únete a nosotros en "BARBUDOS ALFA", donde la tradición se encuentra 
+				 con la vanguardia para crear un espacio que celebra la masculinidad y el arte
+				  de lucir bien.
+            </p>
+    </section>
+    <div class="ilustraciones"> 
+        <div class="tituloilus">
+            <h1>Galeria</h1>
+        </div>
+        <div class="ful-img" id="fulImgBox">
+            <img src="img/neto 1.png" id="fulImg"> 
+            <span onclick="closeImg()">X</span>
+        </div>
+        <div class="img-gallery">
+            <img src="img/CORTE.jpg" onclick="openfulImg(this.src)" alt="">
+            <img src="img/KEVIN.jpg" onclick="openfulImg(this.src)" alt="">
+            <img src="img/1.png" onclick="openfulImg(this.src)" alt="">
+            <img src="img/2.png" onclick="openfulImg(this.src)" alt="">
+            <img src="img/3.png" onclick="openfulImg(this.src)" alt="">
+            <img src="img/4.png" onclick="openfulImg(this.src)" alt="">
+            <img src="img/5.png" onclick="openfulImg(this.src)" alt="">
+            <img src="img/6.png" onclick="openfulImg(this.src)" alt="">
+            <img src="img/7.png" onclick="openfulImg(this.src)" alt="">
+            <img src="img/8.png" onclick="openfulImg(this.src)" alt="">
+            <img src="img/9.png" onclick="openfulImg(this.src)" alt="">
+            <img src="img/10.png" onclick="openfulImg(this.src)" alt="">
+            <img src="img/11.jpg" onclick="openfulImg(this.src)" alt="">
+            <img src="img/12.jpg" onclick="openfulImg(this.src)" alt="">
+            <img src="img/13.jpg" onclick="openfulImg(this.src)" alt="">
+        </div>
+    </div>   
+    <div class="formulario-contacto contenedor">
+
+        <div class="informacion-contacto">
+            <h3>Contactanos</h3>
+            <p><i class="fas fa-map-marker-alt"></i>Av Nereo Rodríguez Barragán 988-1, Col del Valle 2da Secc, 78200 San Luis Potosí, S.L.P.</p>
+            <p><i class="fas fa-envelope"></i> barbudosalfa@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i>444 292 1697</p>
+            <div class="redes-sociales">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+        <form class="formulario">
+            <div class="input-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Nombre" id="nombre">
+            </div>
+            <div class="input-formulario">
+                <label for="apellidos">Apellido</label>
+                <input type="text" placeholder="Apellido" id="apellidos">
+            </div>
+            <div class="input-formulario">
+                <label for="correo">Correo</label>
+                <input type="email" placeholder="ejemplo@ejemplo.com" id="correo">
+            </div>
+            <div class="input-formulario">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="+90 543 779 9410" id="telefono">
+            </div>
+            <div class="input-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea></textarea>
+            </div>
+            <div class="btn-formulario">
+                <input type="submit" class="btn btn-verde" value="Enviar">
+            </div>
+            
+        </form>
+		
+    </div>
+    <div class="pie-pagina ">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>Av Nereo Rodríguez Barragán 988-1, Col del Valle 2da Secc, 78200 San Luis Potosí, S.L.P.</p>
+            </div>
+            <div class="info">
+                <h3>Horario</h3>
+                <p>Domingo - Viernes 11am - 8pm</p>
+                <p>Sabado 10am- 8pm</p>
+            </div>
+           
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; Barbudos Alfa</p>
+    </footer>
+	
+    <script src="galeria.js"></script>
+	<script type="text/javascript", src="banner.js"></script>
+</body>
+</html>
